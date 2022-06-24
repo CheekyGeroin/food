@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <headear class="header">
+      <div class="container header__container">
+        <div class="menu">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#hero" class="navigation__link active">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#how-work" class="navigation__link">Как работает</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#propositions" class="navigation__link">Меню</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#reviews" class="navigation__link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__button">
+            <a href="#" class="menu__link">Корзина</a>
+          </div>
+        </div>
+      </div>
+    </headear>
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <svg class="hero__icon hero__icon--before" width="95" height="86">
+            <use href="#"></use>
+          </svg>
+          <h1 class="hero__title">
+            <span class="hero__accent">Доставка</span> сбалансированного и
+            здорового питания
+          </h1>
+          <svg class="hero__icon hero__icon--middle" width="88" height="75">
+            <use href="#"></use>
+          </svg>
+          <div class="hero__button">
+            <a href="#propositions">выбрать программу</a>
+          </div>
+          <div class="hero__images">
+            <img
+              class="hero__img-up"
+              srcset="
+                ./images/hero/stamp-65w.png 65w,
+                ./images/hero/stamp-130w.png 130w,
+                ./images/hero/stamp-151w.png 151w,
+                ./images/hero/stamp-302w.png 302w
+              "
+              sizes="(min-width:1200px) 151px, (min-width:480px) "
+              src="./images/hero/stamp-65w.png"
+              alt="индивидуальный штамп пригодности"
+            />
+
+            <img
+              class="hero__img-down"
+              srcset="
+                ./images/hero/bowl-143w.png 143w,
+                ./images/hero/bowl-286w.png 286w,
+                ./images/hero/bowl-433w.png 433w,
+                ./images/hero/bowl-594w.png 594w,
+                ./images/hero/bowl-866w.png 866w
+              "
+              sizes="(min-width:1200px) 433px, (min-width:768px) 297px, (min-width:480px) 143px "
+              src="./images/hero/bowl-143w.png"
+              alt="боул с овощами"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="how-work" id="how-work">
+        <div class="container">
+          <div class="how-work__container">
+            <h2 class="how-work__title">как это работает?</h2>
+            <div class="how-work__card">
+              <ul class="how-work__list">
+                <li class="how-work__item">
+                  <svg class="how-work__icon">
+                    <use href="#"></use>
+                  </svg>
+                  <p class="how-work__text">
+                    Выберите программу питания, женский или мужской набор.
+                    Заполните все контактные данные, чтобы мы смогли с вами
+                    связаться.
+                  </p>
+                </li>
+                <li class="how-work__item">
+                  <svg class="how-work__icon">
+                    <use href="#"></use>
+                  </svg>
+                  <p class="how-work__text">
+                    Наши повара готовят еду для вас и раскладывают по порциям.
+                    Далее мы бесплатно доставляем ваш дневной рацион в любую
+                    точку города каждый день.
+                  </p>
+                </li>
+                <li class="how-work__item">
+                  <svg class="how-work__icon">
+                    <use href="#"></use>
+                  </svg>
+                  <p class="how-work__text">
+                    Вы правильно питаетесь без усилий в течение всего дня.
+                    Рацион рассчитан и сбалансирован по пищевой ценности и по
+                    нутриентному составу.
+                  </p>
+                </li>
+              </ul>
+              <img
+                class="how-work__img"
+                srcset="
+                  ./images/how-work/how-work-485w.png 485w,
+                  ./images/how-work/how-work-970w.png 970w
+                "
+                sizes="(min-width:1200px) 485px"
+                src="./images/how-work/how-work-485w.png"
+                alt="фрукты на доске"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <h2 class="advantages__title hidden">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href="#"></use>
+              </svg>
+              <p class="advantages__text">содержит белок</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href="#"></use>
+              </svg>
+              <p class="advantages__text">только натуральние ингедиенты</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon">
+                <use href="#"></use>
+              </svg>
+              <p class="advantages__text">не содержит сахар</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="propositions">
+        <div class="container">
+          <h2 class="propositions__title">выберите программу питания</h2>
+          <ul class="propositions__list">
+            <li class="propositions__item">
+              <div class="card">
+                <img
+                  class="card__img"
+                  srcset="
+                    ./images/proposes/buckwheat-544w.jpg   544w,
+                    ./images/proposes/buckwheat-1088w.jpg 1088w
+                  "
+                  sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                  src="./images/proposes/buckwheat-544w.jpg"
+                  alt="гречка с яйцом"
+                />
+                <h3 class="card__title">Похудение</h3>
+                <p class="card__text">
+                  специальная программа питания для девушек/мужчин –
+                  сбалансированная, низкокалорийная и безопасная система
+                  уменьшения веса.
+                </p>
+                <p class="card__subtext">Выбрать для кого:</p>
+                <div class="card__buttons">
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <button class="card__button" type="button">
+                        Женщине
+                      </button>
+                    </li>
+                    <li class="card__item">
+                      <button class="card__button" type="button">
+                        Мужчине
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="propositions__item">
+              <div class="card">
+                <img
+                  class="card__img"
+                  srcset="
+                    ./images/proposes/meat-544w.jpg   544w,
+                    ./images/proposes/meat-1088w.jpg 1088w
+                  "
+                  sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                  src="./images/proposes/meat-544w.jpg"
+                  alt="мясо в четырёх тарелках"
+                />
+                <h3 class="card__title">Набор массы</h3>
+                <p class="card__text">
+                  Включает двойную суточную норму белков, углеводы употребляют
+                  во второй половине дня, а количество жиров определеют отдельно
+                </p>
+                <p class="card__subtext">Выбрать для кого:</p>
+                <div class="card__buttons">
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <button class="card__button" type="button">
+                        Женщине
+                      </button>
+                    </li>
+                    <li class="card__item">
+                      <button class="card__button" type="button">
+                        Мужчине
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="propositions__item">
+              <div class="card">
+                <img
+                  class="card__img"
+                  srcset="
+                    ./images/proposes/salad-544w.jpg   544w,
+                    ./images/proposes/salad-1088w.jpg 1088w
+                  "
+                  sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                  src="./images/proposes/salad-544w.jpg"
+                  alt="салат с мясом"
+                />
+                <h3 class="card__title">Стабилизация</h3>
+                <p class="card__text">
+                  Питание для стабилизации веса отличается от диеты для
+                  похудения – оно более калорийное, но строго сбалансированное
+                  по времени приема пищи.
+                </p>
+                <p class="card__subtext">Выбрать для кого:</p>
+                <div class="card__buttons">
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <button class="card__button" type="button">
+                        Женщине
+                      </button>
+                    </li>
+                    <li class="card__item">
+                      <button class="card__button" type="button">
+                        Мужчине
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="reviews__title">отзывы</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <h3 class="reviews__subtitle">Лариса</h3>
+              <p class="reviews__text">
+                Безумно рада, что можно теперь не задумываться о том, что будет
+                на завтрак обед или ужин
+              </p>
+            </li>
+            <li class="reviews__item">
+              <h3 class="reviews__subtitle">Диана</h3>
+              <p class="reviews__text">
+                Давно мечта начать правильно питаться, а с доставкой это стало
+                делать намного проще. Ведь это можно делать где бы ты не
+                находился
+              </p>
+            </li>
+            <li class="reviews__item">
+              <h3 class="reviews__subtitle">Юлия</h3>
+              <p class="reviews__text">
+                Уже месяц пользуюсь данной доставкой и чувствую себя сейчас
+                намного лучше, похудела на 3кг
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="mail">
+          <svg class="mail__icon">
+            <use href=""></use>
+          </svg>
+          <a href="mailto:dietfoodua@gmail.com" class="mail__link">
+            dietfoodua@gmail.com
+          </a>
+        </div>
+        <div class="contact">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a href="tel:+380555555555" class="contact__link">
+                <svg class="contact__icon">
+                  <use href="#"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="https://www.instagram.com/" rel="noopener norefferer nofollow" class="contact__link">
+                <svg class="contact__icon">
+                  <use href="#"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__rights">© Powered by Tseluiko.Mariia</p>
+      </div>
+    </footer>
+  </body>
+</html>
