@@ -1,0 +1,54 @@
+.how-work{
+    @media screen and (min-width:$desktop){
+        padding-top: 67px;
+    }
+}
+.section__container{
+    @media screen and (min-width:$desktop){
+        padding: 0 30px;
+            margin: 0 auto;
+    }
+}
+.how-work__container{
+   @media screen and (min-width:$desktop){
+    padding: 73px 97px 84px 67px;
+        box-shadow: -8px -10px 20px rgba(118, 138, 121, 0.3);
+        border-radius: 36px;
+   }
+}
+.how-work__title{
+    @media screen and (min-width:$desktop){
+        font-size: 40px;
+            line-height: 1.17;
+            text-transform: uppercase;
+            color: $subtitleAndButton;
+            font-family: $secondFont;
+            margin-bottom: 45px;
+    }
+}
+.how-work__card{
+   @media screen and (min-width:$desktop){
+    background-color: $titleColor;
+    border-radius: 30px 300px 300px 30px;
+    display: flex;
+    padding: 49px 36px;
+   }
+}
+.how-work__item{
+    @media screen and (min-width:$desktop){
+        max-width: 678px;
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+}
+.how-work__text{
+    @media screen and (min-width:$desktop){
+        font-size: 25px;
+        line-height: 1.36;
+    }
+}
+.how-work__img{
+    margin-left: 2px;
+}

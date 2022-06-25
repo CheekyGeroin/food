@@ -1,6 +1,7 @@
 .header{
     @media screen and (min-width:$desktop){
         position: absolute;
+        width: 100%;
     }
 }
 .header__container{
@@ -17,7 +18,7 @@
 }
 .navigation {
     @media screen and (min-width:$desktop){
-        margin-right: 60px;
+        margin-right: 110px;
     }
 }
 .navigation__list{

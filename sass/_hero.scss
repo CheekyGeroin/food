@@ -32,7 +32,7 @@
     @media screen and (min-width:$desktop){
         padding-top: 198px;
         background-image: url(../images/hero/hero-desktop.png);
-        padding-bottom: 240px;
+        padding-bottom: 362px;
     }
 
         @media (min-device-pixel-ratio: 2),
@@ -90,9 +90,4 @@
 }
 .hero__icon-up{
     margin-bottom: 11px;
-}
-.hero__icon-middle{
-    position: absolute;
-    bottom: 468px;
-    left: 495px;
 }
