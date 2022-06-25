@@ -41,19 +41,22 @@
     </headear>
     <main>
       <section class="hero" id="hero">
-        <div class="container">
-          <svg class="hero__icon hero__icon--before" width="95" height="86">
-            <use href="#"></use>
-          </svg>
+        <div class="container hero__container">
+         <img  class="hero__icon-up"
+         alt="листки" 
+         srcset="./images/hero/leaflet-48w.png 48w, ./images/hero/leaflet-95w.png 95w, ./images/hero/leaflet-96w.png 96w, ./images/hero/leaflet-190w.png 190w"
+         sizes="(min-width:1200px) 95px, (min-width:768px) 95px, (min-width:480px) 48px, 100vw"
+         src="./images/hero/leaflet-95w.png"
+         >
           <h1 class="hero__title">
             <span class="hero__accent">Доставка</span> сбалансированного и
             здорового питания
           </h1>
-          <svg class="hero__icon hero__icon--middle" width="88" height="75">
-            <use href="#"></use>
-          </svg>
+          <img class="hero__icon-middle" src="./images/hero/leaflet-88w.png" alt="листки" 
+          srcset="./images/hero/leaflet-88w.png 88w, ./images/hero/leaflet-176w.png 176w" 
+          sizes="(min-width:1200px) 88px">
           <div class="hero__button">
-            <a href="#propositions">выбрать программу</a>
+            <a class="hero__button-link" href="#propositions">выбрать программу</a>
           </div>
           <div class="hero__images">
             <img

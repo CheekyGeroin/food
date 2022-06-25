@@ -1,0 +1,59 @@
+.header{
+    @media screen and (min-width:$desktop){
+        position: absolute;
+    }
+}
+.header__container{
+    @media screen and (min-width:$desktop){
+        padding-top: 40px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #DDF2E0;
+    }
+}
+.menu{
+   @media screen and (min-width:$desktop){
+    display: flex;
+   }
+}
+.navigation {
+    @media screen and (min-width:$desktop){
+        margin-right: 60px;
+    }
+}
+.navigation__list{
+    @media screen and (min-width:$desktop){
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+}
+.navigation__item{
+    @media screen and (min-width:$desktop){
+        &:not(:last-child){
+            margin-right: 80px;
+        }
+    }
+}
+.navigation__link{
+    @media screen and (min-width:$desktop){
+        font-size: 25px;
+        line-height: 1.36;
+        color: $mainTextColor;
+    }
+}
+.menu__link{
+    @media screen and (min-width:$desktop){
+        padding: 15px 50px;
+        background-color: $subtitleAndButton;
+        box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.6), inset 4px 4px 4px rgba(255, 218, 26, 0.8), inset -3px -3px 2px rgba(235, 130, 6, 0.8);
+        border-radius: 41px;
+        font-size: 25px;
+        line-height: 1.16;
+        color: $titleColor;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus{
+            box-shadow: 0px 0px 20px rgba(245, 178, 2, 0.6), inset 4px 4px 4px rgba(255, 218, 26, 0.8), inset -3px -3px 2px rgba(235, 130, 6, 0.8);
+        }
+    }
+}
+
