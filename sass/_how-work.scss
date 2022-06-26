@@ -28,6 +28,7 @@
 }
 .how-work__card{
    @media screen and (min-width:$desktop){
+    max-width: 1198px;
     background-color: $titleColor;
     border-radius: 30px 300px 300px 30px;
     display: flex;
@@ -38,6 +39,7 @@
     @media screen and (min-width:$desktop){
         max-width: 678px;
         display: flex;
+        align-items: center;
         &:not(:last-child){
             margin-bottom: 25px;
         }
@@ -51,4 +53,7 @@
 }
 .how-work__img{
     margin-left: 2px;
+}
+.how-work__icon{
+    width: 100%;
 }

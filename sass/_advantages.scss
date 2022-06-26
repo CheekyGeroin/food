@@ -1,0 +1,34 @@
+.advantages{
+   @media screen and (min-width:$desktop){
+    padding-top: 45px;
+        padding-bottom: 45px;
+        background-color: $secondBackgroundColor;
+   }
+}
+.advantages__title{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+.advantages__list{
+    @media screen and (min-width:$desktop){
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+}
+.advantages__item{
+    @media screen and (min-width:$desktop){
+        &:not(:last-child){
+            margin-right: 100px;
+        }
+    }
+}

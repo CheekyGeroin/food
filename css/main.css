@@ -514,6 +514,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .how-work__card {
+    max-width: 1198px;
     background-color: #0C382B;
     border-radius: 30px 300px 300px 30px;
     display: -webkit-box;
@@ -529,6 +530,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .how-work__item:not(:last-child) {
     margin-bottom: 25px;
@@ -544,4 +548,50 @@ ul {
 
 .how-work__img {
   margin-left: 2px;
+}
+
+.how-work__icon {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #69916E;
+  }
+}
+
+.advantages__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__item:not(:last-child) {
+    margin-right: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */
