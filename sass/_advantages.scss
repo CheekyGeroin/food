@@ -32,3 +32,16 @@
         }
     }
 }
+.advantages__container{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    @media screen and (min-width:$desktop) {
+            margin-bottom: 12px;
+        }
+}
+
+.advantages__text{
+    font-size: 25px;
+    line-height: 1.36;
+}

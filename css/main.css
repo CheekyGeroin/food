@@ -594,4 +594,26 @@ ul {
   .advantages__item:not(:last-child) {
     margin-right: 100px;
   }
+}
+
+.advantages__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .advantages__container {
+    margin-bottom: 12px;
+  }
+}
+
+.advantages__text {
+  font-size: 25px;
+  line-height: 1.36;
 }/*# sourceMappingURL=main.css.map */
