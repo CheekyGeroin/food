@@ -862,4 +862,116 @@ ul {
     right: 80px;
     top: 100px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 77px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 114px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail__icon {
+    margin-right: 6px;
+  }
+}
+
+.mail__link {
+  color: #0C382B;
+}
+@media screen and (min-width: 1200px) {
+  .mail__link {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    margin-right: 107px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-box-shadow: 4px 2px 10px rgba(73, 124, 81, 0.32);
+            box-shadow: 4px 2px 10px rgba(73, 124, 81, 0.32);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact__link:hover, .contact__link:focus {
+    border: 1px solid #F5B202;
+    -webkit-box-shadow: 4px 2px 10px rgba(73, 124, 81, 0.32);
+            box-shadow: 4px 2px 10px rgba(73, 124, 81, 0.32);
+  }
+}
+
+.contact__icon {
+  fill: #69916E;
+}
+
+.footer__rights {
+  color: #0C382B;
+}
+@media screen and (min-width: 1200px) {
+  .footer__rights {
+    font-size: 20px;
+    line-height: 1.35;
+  }
 }/*# sourceMappingURL=main.css.map */
