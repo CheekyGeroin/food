@@ -1,6 +1,9 @@
 .how-work{
     @media screen and (min-width:$desktop){
         padding-top: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 .section__container{
@@ -28,11 +31,12 @@
 }
 .how-work__card{
    @media screen and (min-width:$desktop){
-    max-width: 1198px;
+    max-width: 1300px;
     background-color: $titleColor;
     border-radius: 30px 300px 300px 30px;
     display: flex;
     padding: 49px 36px;
+    align-items: center;
    }
 }
 .how-work__item{
@@ -45,6 +49,7 @@
         }
     }
 }
+
 .how-work__text{
     @media screen and (min-width:$desktop){
         font-size: 25px;
@@ -52,8 +57,19 @@
     }
 }
 .how-work__img{
-    margin-left: 2px;
+    @media screen and (min-width:$desktop){
+        margin-left: 75px;
+    }
 }
 .how-work__icon{
-    width: 100%;
+   @media screen and (min-width:$desktop){
+    width: 30%;
+    &--normal {
+            margin-right: 17px;
+        }
+    
+        &--wider {
+            margin-right: 25px;
+        }
+   }
 }

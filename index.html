@@ -92,7 +92,7 @@
             <div class="how-work__card">
               <ul class="how-work__list">
                 <li class="how-work__item">
-                  <svg class="how-work__icon" width="53" height="53">
+                  <svg class="how-work__icon how-work__icon--normal" width="53" height="53">
                     <use href="./images/icons.svg#check"></use>
                   </svg>
                   <p class="how-work__text">
@@ -102,7 +102,7 @@
                   </p>
                 </li>
                 <li class="how-work__item">
-                  <svg class="how-work__icon" width="53" height="53">
+                  <svg class="how-work__icon how-work__icon--wider" width="53" height="53">
                     <use href="./images/icons.svg#check"></use>
                   </svg>
                   <p class="how-work__text">
@@ -112,7 +112,7 @@
                   </p>
                 </li>
                 <li class="how-work__item">
-                  <svg class="how-work__icon" width="53" height="53">
+                  <svg class="how-work__icon how-work__icon--normal" width="53" height="53">
                     <use href="./images/icons.svg#check"></use>
                   </svg>
                   <p class="how-work__text">
@@ -173,110 +173,89 @@
           <ul class="propositions__list">
             <li class="propositions__item">
               <div class="card">
-                <img
-                  class="card__img"
-                  srcset="
-                    ./images/proposes/buckwheat-544w.jpg   544w,
-                    ./images/proposes/buckwheat-1088w.jpg 1088w
-                  "
-                  sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
-                  src="./images/proposes/buckwheat-544w.jpg"
-                  alt="гречка с яйцом"
-                />
-                <h3 class="card__title">Похудение</h3>
-                <p class="card__text">
-                  специальная программа питания для девушек/мужчин –
-                  сбалансированная, низкокалорийная и безопасная система
-                  уменьшения веса.
-                </p>
-                <p class="card__subtext">Выбрать для кого:</p>
-                <div class="card__buttons">
-                  <ul class="card__list">
-                    <li class="card__item">
-                      <button class="card__button" type="button">
-                        Женщине
-                      </button>
-                    </li>
-                    <li class="card__item">
-                      <button class="card__button" type="button">
-                        Мужчине
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                <img class="card__img" srcset="
+                                ./images/proposes/buckwheat-544w.jpg   544w,
+                                ./images/proposes/buckwheat-1088w.jpg 1088w
+                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                  src="./images/proposes/buckwheat-544w.jpg" alt="гречка с яйцом" />
+                <div class="card__container">
+                  <h3 class="card__title">Похудение</h3>
+                  <p class="card__text">
+                    специальная программа питания для девушек/мужчин –
+                    сбалансированная, низкокалорийная и безопасная система
+                    уменьшения веса.
+                  </p>
+                  <p class="card__subtext">Выбрать для кого:</p>
+                  <div class="card__buttons">
+                    <ul class="card__list">
+                      <li class="card__item">
+                        <button class="card__button" type="button">
+                          Женщине
+                        </button>
+                      </li>
+                      <li class="card__item">
+                        <button class="card__button" type="button">
+                          Мужчине
+                        </button>
+                  </div>
             </li>
             <li class="propositions__item">
               <div class="card">
-                <img
-                  class="card__img"
-                  srcset="
-                    ./images/proposes/meat-544w.jpg   544w,
-                    ./images/proposes/meat-1088w.jpg 1088w
-                  "
-                  sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
-                  src="./images/proposes/meat-544w.jpg"
-                  alt="мясо в четырёх тарелках"
-                />
-                <h3 class="card__title">Набор массы</h3>
-                <p class="card__text">
-                  Включает двойную суточную норму белков, углеводы употребляют
-                  во второй половине дня, а количество жиров определеют отдельно
-                </p>
-                <p class="card__subtext">Выбрать для кого:</p>
-                <div class="card__buttons">
-                  <ul class="card__list">
-                    <li class="card__item">
-                      <button class="card__button" type="button">
-                        Женщине
-                      </button>
-                    </li>
-                    <li class="card__item">
-                      <button class="card__button" type="button">
-                        Мужчине
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                <img class="card__img" srcset="
+                                ./images/proposes/meat-544w.jpg   544w,
+                                ./images/proposes/meat-1088w.jpg 1088w
+                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                  src="./images/proposes/meat-544w.jpg" alt="мясо в четырёх тарелках" />
+                <div class="card__container">
+                  <h3 class="card__title">Набор массы</h3>
+                  <p class="card__text">
+                    Включает двойную суточную норму белков, углеводы употребляют
+                    во второй половине дня, а количество жиров определеют отдельно
+                  </p>
+                  <p class="card__subtext">Выбрать для кого:</p>
+                  <div class="card__buttons">
+                    <ul class="card__list">
+                      <li class="card__item">
+                        <button class="card__button" type="button">
+                          Женщине
+                        </button>
+                      </li>
+                      <li class="card__item">
+                        <button class="card__button" type="button">
+                          Мужчине
+                        </button>
+                  </div>
             </li>
             <li class="propositions__item">
               <div class="card">
-                <img
-                  class="card__img"
-                  srcset="
-                    ./images/proposes/salad-544w.jpg   544w,
-                    ./images/proposes/salad-1088w.jpg 1088w
-                  "
-                  sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
-                  src="./images/proposes/salad-544w.jpg"
-                  alt="салат с мясом"
-                />
-                <h3 class="card__title">Стабилизация</h3>
-                <p class="card__text">
-                  Питание для стабилизации веса отличается от диеты для
-                  похудения – оно более калорийное, но строго сбалансированное
-                  по времени приема пищи.
-                </p>
-                <p class="card__subtext">Выбрать для кого:</p>
-                <div class="card__buttons">
-                  <ul class="card__list">
-                    <li class="card__item">
-                      <button class="card__button" type="button">
-                        Женщине
-                      </button>
-                    </li>
-                    <li class="card__item">
-                      <button class="card__button" type="button">
-                        Мужчине
-                      </button>
-                    </li>
+                <img class="card__img" srcset="
+                                ./images/proposes/salad-544w.jpg   544w,
+                                ./images/proposes/salad-1088w.jpg 1088w
+                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                  src="./images/proposes/salad-544w.jpg" alt="салат с мясом" />
+                <div class="card__container">
+                  <h3 class="card__title">Стабилизация</h3>
+                  <p class="card__text">
+                    Питание для стабилизации веса отличается от диеты для
+                    похудения – оно более калорийное, но строго сбалансированное
+                    по времени приема пищи.
+                  </p>
+                  <p class="card__subtext">Выбрать для кого:</p>
+                  <div class="card__buttons">
+                    <ul class="card__list">
+                      <li class="card__item">
+                        <button class="card__button" type="button">
+                          Женщине
+                        </button>
+                      </li>
+                      <li class="card__item">
+                        <button class="card__button" type="button">
+                          Мужчине
+                        </button>
+                  </div>
+                </li>
                   </ul>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
       </section>
       <section class="reviews" id="reviews">
         <div class="container">

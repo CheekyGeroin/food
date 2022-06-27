@@ -1,0 +1,31 @@
+.propositions{
+   @media screen and (min-width:$desktop){
+        padding-top: 45px;
+        padding-bottom: 45px;
+   }
+}
+.propositions__title{
+    @media screen and (min-width:$desktop){
+        font-size: 40px;
+        line-height: 1.17;
+        color: $titleColor;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+}
+.propositions__list{
+    @media screen and (min-width:$desktop){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+.propositions__item{
+    @media screen and (min-width:$desktop){
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+}

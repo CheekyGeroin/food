@@ -1,0 +1,66 @@
+.card{
+    background-color: $titleColor;
+    @media screen and(min-width:$desktop){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 1200px;
+        max-width: 1400px;
+    }
+}
+.card__container{
+    @media screen and(min-width:$desktop){
+        padding: 36px 65px 36px 50px
+    }
+}
+.card__title{
+    @media screen and(min-width:$desktop){
+        font-size: 40px;
+        line-height: 1.17;
+        color: $subtitleAndButton;
+        text-transform: uppercase;
+        font-family: $secondFont;
+        margin-bottom: 30px;
+    }
+}
+.card__text{
+    @media screen and(min-width:$desktop){
+        font-size: 25px;
+        line-height: 1.36;
+        margin-bottom: 30px;
+    }
+}
+.card__subtext{
+    @media screen and(min-width:$desktop){
+        font-size: 22px;
+        line-height: 1.36;
+        color: $propositionSubtitle;
+        margin-bottom: 25px;
+    }
+}
+.card__list{
+    @media screen and(min-width:$desktop){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.card__item{
+    @media screen and (min-width:$desktop){
+        &:not(:last-child){
+            margin-right: 46px;
+        }
+    }
+}
+.card__button{
+    @media screen and(min-width:$desktop){
+        background-color: $subtitleAndButton;
+        box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.6), inset 4px 4px 4px rgba(255, 218, 26, 0.8), inset -3px -3px 2px rgba(235, 130, 6, 0.8);
+        border-radius: 41px;
+        font-size: 25px;
+        line-height: 1.16;
+        color: $titleColor;
+        padding: 16px 35px;
+        border: none;
+    }
+}
