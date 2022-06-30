@@ -1,11 +1,11 @@
 .propositions{
-   @media screen and (min-width:$desktop){
+   @media screen and (min-width:$tablet){
         padding-top: 45px;
         padding-bottom: 45px;
    }
 }
 .propositions__title{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         font-size: 40px;
         line-height: 1.17;
         color: $titleColor;
@@ -15,7 +15,7 @@
     }
 }
 .propositions__list{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,9 +23,31 @@
     }
 }
 .propositions__item{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         &:not(:last-child){
             margin-bottom: 25px;
         }
     }
+}
+.propositions__buttons{
+    display: flex;
+    justify-content: center;
+    padding: 40px 123px;
+    @media screen and(min-width:$desktop){
+        display: none;
+    }
+}
+.propositions__button{
+    
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: $subtitleAndButton;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.propositions__icon{
+    margin-left: 6px;
+    fill: $subtitleAndButton;
 }

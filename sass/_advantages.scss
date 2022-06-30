@@ -1,8 +1,13 @@
 .advantages{
+    background-color: $secondBackgroundColor;
+    @media screen and (min-width:$tablet){
+        padding-top: 39px;
+        padding-bottom: 39px;
+    }
    @media screen and (min-width:$desktop){
     padding-top: 45px;
         padding-bottom: 45px;
-        background-color: $secondBackgroundColor;
+        
    }
 }
 .advantages__title{
@@ -19,8 +24,11 @@
         overflow: hidden;
 }
 .advantages__list{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         display: flex;
+    }
+    @media screen and (min-width:$desktop){
+        
             align-items: center;
             justify-content: center;
     }
@@ -44,4 +52,5 @@
 .advantages__text{
     font-size: 25px;
     line-height: 1.36;
+    text-align: center;
 }

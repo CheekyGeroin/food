@@ -1,10 +1,17 @@
 .header{
-    @media screen and (min-width:$desktop){
-        position: absolute;
+    position: absolute;
+    @media screen and (min-width:$tablet){
+        
         width: 100%;
     }
 }
 .header__container{
+    display: flex;
+    align-items: center;
+    @media screen and (min-width:$tablet){
+        padding-top: 59px;
+        padding-bottom: 30px;
+    }
     @media screen and (min-width:$desktop){
         max-width: 1280px;
         display: flex;
@@ -16,15 +23,16 @@
     }
 }
 .language__list{
-    @media screen and (min-width:$desktop){
-        display: flex;
+    display: flex;
         align-items: center;
         justify-content: center;
+    @media screen and (min-width:$desktop){
+        
         margin-right: 38px;
     }
 }
 .language__item{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         &:not(:last-child){
             margin-right: 21px;
         }
@@ -32,19 +40,46 @@
     }
 }
 .language__link{
-    @media screen and (min-width:$desktop){
-        color: $mainTextColor;
-        font-size: 25px;
-        line-height: 1.36;
-        &.active {
+    color: $mainTextColor;
+    &.active {
             color: $titleColor;
             padding: 9px;
             border-radius: 50%;
             background-color: #69906E;
         }
+    @media screen and (min-width:$tablet){
+        font-size: 25px;
+        line-height: 1.36;
     }
 }
+.header__button{
+    @media screen and (min-width:$tablet){
+        margin-left: auto;
+    }
+    @media screen and (min-width:$desktop){
+        display: none;
+    }
+}
+.button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    line-height: 1.18;
+    text-transform: uppercase;
+    color: $mainTextColor;
+    @media screen and (min-width:$tablet){
+        font-size: 25px;
+        line-height: 1.16;
+    }
+}
+.header__icon{
+    margin-left: 6px;
+    fill: $mainTextColor;
+}
 .menu{
+    display: none;
    @media screen and (min-width:$desktop){
     display: flex;
     align-items: center;
