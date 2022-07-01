@@ -5,7 +5,7 @@
     }
 }
 .reviews__title{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         font-size: 40px;
         line-height: 1.17;
         color: $titleColor;
@@ -15,18 +15,29 @@
     }
 }
 .reviews__list{
+    position: relative;
     @media screen and (min-width:$desktop){
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
+        
     }
 }
 .reviews__item{
-    @media screen and (min-width:$desktop){
-        background-color: $secondBackgroundColor;
+    background-color: $secondBackgroundColor;
+    border-radius: 20px;
+    @media screen and (max-width:1199px){
+        &:first-child{
+            display: none;
+        }
+        &:last-child{
+            display: none;
+        }
+    }
+    @media screen and (min-width:$tablet){
         padding: 50px 40px;
-        border-radius: 20px;
+    }
+    @media screen and (min-width:$desktop){
         &:first-child{
             max-width: 540px;
             position: absolute;
@@ -48,7 +59,7 @@
     }
 }
 .reviews__subtitle{
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         text-align: center;
         font-family: $secondFont;
         font-size: 40px;
@@ -57,21 +68,30 @@
     }
 }
 .reviews__text{
-    @media screen and(min-width:$desktop){
+    @media screen and(min-width:$tablet){
         font-size: 25px;
         line-height: 1.36;
         text-align: center;
     }
 }
 .reviews__image{
+    position: absolute;
+    @media screen and (min-width:$tablet){
+        &--left{
+            top: 100px;
+            left: -65px;
+        }
+        &--right{
+            top: 100px;
+            right: -65px;
+        }
+    }
     @media screen and (min-width:$desktop){
         &--left{
-            position: absolute;
             left: 80px;
             top: 100px; 
         }
         &--right{
-            position: absolute;
             right: 80px;
             top: 100px;
         }
