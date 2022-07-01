@@ -903,6 +903,8 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card {
     max-width: 544px;
+    position: relative;
+    z-index: 3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -924,6 +926,23 @@ ul {
 @media screen and (max-width: 1199px) {
   .card__container {
     display: none;
+    width: 100%;
+    padding: 0 41px 46px 41px;
+    background-color: #0C382B;
+    border-radius: 0 0 20px 20px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card__container.is-open {
+    display: block;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -932,6 +951,21 @@ ul {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .card__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
 @media screen and (min-width: 1200px) {
   .card__title {
     font-size: 40px;
@@ -943,7 +977,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .card__text {
     font-size: 25px;
     line-height: 1.36;
@@ -951,7 +985,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .card__subtext {
     font-size: 22px;
     line-height: 1.36;
@@ -960,7 +994,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .card__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -974,13 +1008,13 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .card__item:not(:last-child) {
     margin-right: 46px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .card__button {
     background-color: #F5B202;
     -webkit-box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.6), inset 4px 4px 4px rgba(255, 218, 26, 0.8), inset -3px -3px 2px rgba(235, 130, 6, 0.8);

@@ -29,7 +29,7 @@
         <div class="header__button">
           <button class="button" type="button">
             Меню
-            <svg class="header__icon" width="13" height="21">
+            <svg class="header__icon" width="20" height="21">
               <use href="./images/icons.svg#arrow-down"></use>
             </svg>
           </button>
@@ -156,7 +156,7 @@
       </section>
       <section class="advantages" id="advantages">
         <div class="container">
-          <h2 class="advantages__title hidden">Преимущества</h2>
+          <h2 class="advantages__title">Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__container">
@@ -196,7 +196,14 @@
                                 ./images/proposes/buckwheat-1088w.jpg 1088w
                               " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
                   src="./images/proposes/buckwheat-544w.jpg" alt="гречка с яйцом" />
-                <div class="card__container">
+                  <div class="propositions__buttons">
+                    <button class="propositions__button propositions__button--first" type="button">Похудение
+                      <svg class="propositions__icon" width="26" height="31">
+                        <use href="./images/icons.svg#arrow-down"></use>
+                      </svg>
+                    </button>
+                  </div>
+                <div class="card__container card__container--first">
                   <h3 class="card__title">Похудение</h3>
                   <p class="card__text">
                     специальная программа питания для девушек/мужчин –
@@ -217,14 +224,7 @@
                         </button>
                   </div>
                 </div>
-                <div class="propositions__buttons">
-                  <button class="propositions__button" type="button">Похудение
-                    <svg class="propositions__icon" width="19" height="31">
-                      <use href="./images/icons.svg#arrow-down"></use>
-                    </svg>
-                  </button>
-                  
-                </div>
+                
             </li>
             <li class="propositions__item">
               <div class="card">
@@ -233,7 +233,15 @@
                                 ./images/proposes/meat-1088w.jpg 1088w
                               " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
                   src="./images/proposes/meat-544w.jpg" alt="мясо в четырёх тарелках" />
-                <div class="card__container">
+                  <div class="propositions__buttons">
+                    <button class="propositions__button propositions__button--second" type="button">Набор массы
+                      <svg class="propositions__icon" width="26" height="31">
+                        <use href="./images/icons.svg#arrow-down"></use>
+                      </svg>
+                    </button>
+                  
+                  </div>
+                <div class="card__container card__container--second">
                   <h3 class="card__title">Набор массы</h3>
                   <p class="card__text">
                     Включает двойную суточную норму белков, углеводы употребляют
@@ -253,14 +261,7 @@
                           </button>
                     </div>
                 </div>
-                <div class="propositions__buttons">
-                  <button class="propositions__button" type="button">Набор массы
-                    <svg class="propositions__icon" width="19" height="31">
-                      <use href="./images/icons.svg#arrow-down"></use>
-                    </svg>
-                  </button>
-                  
-                </div>
+                
             </li>
             <li class="propositions__item">
               <div class="card">
@@ -269,7 +270,15 @@
                                 ./images/proposes/salad-1088w.jpg 1088w
                               " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
                   src="./images/proposes/salad-544w.jpg" alt="салат с мясом" />
-                <div class="card__container">
+                  <div class="propositions__buttons">
+                    <button class="propositions__button propositions__button--third" type="button">Стабилизация
+                      <svg class="propositions__icon" width="26" height="31">
+                        <use href="./images/icons.svg#arrow-down"></use>
+                      </svg>
+                    </button>
+                  
+                  </div>
+                <div class="card__container card__container--third">
                   <h3 class="card__title">Стабилизация</h3>
                   <p class="card__text">
                     Питание для стабилизации веса отличается от диеты для
@@ -289,14 +298,6 @@
                           Мужчине
                         </button>
                   </div>
-                </div>
-                <div class="propositions__buttons">
-                  <button class="propositions__button" type="button">Стабилизация
-                    <svg class="propositions__icon" width="19" height="31">
-                      <use href="./images/icons.svg#arrow-down"></use>
-                    </svg>
-                  </button>
-                  
                 </div>
                 </li>
                   </ul>
@@ -377,5 +378,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/overlay.js" type="module"></script>
   </body>
 </html>
