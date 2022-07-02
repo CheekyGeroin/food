@@ -1,17 +1,19 @@
 .reviews{
+    padding-bottom: 45px;
     @media screen and (min-width:$desktop){
-        padding-top:45px;
-        padding-bottom: 45px;
+        padding-top:45px; 
     }
 }
 .reviews__title{
+    font-size: 25px;
+    line-height: 1.16;
+    color: $titleColor;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
     @media screen and (min-width:$tablet){
         font-size: 40px;
         line-height: 1.17;
-        color: $titleColor;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 45px;
     }
 }
 .reviews__list{
@@ -26,6 +28,7 @@
 .reviews__item{
     background-color: $secondBackgroundColor;
     border-radius: 20px;
+    padding: 31px 17px;
     @media screen and (max-width:1199px){
         &:first-child{
             display: none;
@@ -59,23 +62,37 @@
     }
 }
 .reviews__subtitle{
+    font-size: 22px;
+    line-height: 1.18;
+    text-align: center;
+    font-family: $secondFont;
+    margin-bottom: 15px;
     @media screen and (min-width:$tablet){
-        text-align: center;
-        font-family: $secondFont;
         font-size: 40px;
         line-height: 1.17;
         margin-bottom: 25px;
     }
 }
 .reviews__text{
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
     @media screen and(min-width:$tablet){
         font-size: 25px;
         line-height: 1.36;
-        text-align: center;
+        
     }
 }
 .reviews__image{
     position: absolute;
+    &--left{
+        left: -33px;
+        top: 80px;
+    }
+    &--right{
+        right: -33px;
+        top: 80px;
+    }
     @media screen and (min-width:$tablet){
         &--left{
             top: 100px;

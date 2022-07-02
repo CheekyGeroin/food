@@ -63,7 +63,7 @@
          <img  class="hero__icon-up"
          alt="листки" 
          srcset="./images/hero/leaflet-48w.png 48w, ./images/hero/leaflet-95w.png 95w, ./images/hero/leaflet-96w.png 96w, ./images/hero/leaflet-190w.png 190w"
-         sizes="(min-width:1200px) 95px, (min-width:768px) 95px, (min-width:480px) 48px, 100vw"
+         sizes="(min-width:1200px) 95px, (min-width:768px) 95px, (max-width:767px) 48px, 100vw"
          src="./images/hero/leaflet-95w.png"
          >
           <h1 class="hero__title">
@@ -82,7 +82,7 @@
                 ./images/hero/stamp-151w.png 151w,
                 ./images/hero/stamp-302w.png 302w
               "
-              sizes="(min-width:1200px) 151px, (min-width:480px) "
+              sizes="(min-width:1200px) 151px, (max-width:767px) 65px,100vw"
               src="./images/hero/stamp-65w.png"
               alt="индивидуальный штамп пригодности"
             />
@@ -96,7 +96,7 @@
                 ./images/hero/bowl-594w.png 594w,
                 ./images/hero/bowl-866w.png 866w
               "
-              sizes="(min-width:1200px) 433px, (min-width:768px) 297px, (min-width:480px) 143px "
+              sizes="(min-width:1200px) 433px, (min-width:768px) 297px, (max-width:767px) 143px "
               src="./images/hero/bowl-143w.png"
               alt="боул с овощами"
             />
@@ -162,7 +162,7 @@
               <div class="advantages__container">
                 <img class="advantages__icon" src="./images/advantages/spagetti-90w.png" alt="спагетти"
                   srcset="./images/advantages/spagetti-90w.png 90w, ./images/advantages/spagetti-108w.png 108w, ./images/advantages/spagetti-180w.png 180w, ./images/advantages/spagetti-216w.png 216w"
-                  sizes="(min-width:1200px) 108px, (min-width:768px) 108px, (min-width:480px) 90px, 100vw">
+                  sizes="(min-width:1200px) 108px, (min-width:768px) 108px, (max-width:767px) 90px, 100vw">
               </div>
               <p class="advantages__text">содержит белок</p>
             </li>
@@ -170,7 +170,7 @@
               <div class="advantages__container">
                 <img class="advantages__icon" src="./images/advantages/hand-90w.png" alt="рука"
                   srcset="./images/advantages/hand-90w.png 90w, ./images/advantages/hand-108w.png 108w, ./images/advantages/hand-180w.png 180w, ./images/advantages/hand-216w.png 216w"
-                  sizes="(min-width:1200px) 108px, (min-width:768px) 108px, (min-width:480px) 90px, 100vw">
+                  sizes="(min-width:1200px) 108px, (min-width:768px) 108px, (max-width:767px) 90px, 100vw">
               </div>
               <p class="advantages__text">только натуральние ингедиенты</p>
             </li>
@@ -178,23 +178,24 @@
               <div class="advantages__container">
                 <img class="advantages__icon" src="./images/advantages/box-90w.png" alt="коробка"
                   srcset="./images/advantages/box-90w.png 90w, ./images/advantages/box-108w.png 108w, ./images/advantages/box-180w.png 180w, ./images/advantages/box-216w.png 216w"
-                  sizes="(min-width:1200px) 108px, (min-width:768px) 108px, (min-width:480px) 90px, 100vw">
+                  sizes="(min-width:1200px) 108px, (min-width:768px) 108px, (max-width:767px) 90px, 100vw">
               </div>
               <p class="advantages__text">не содержит сахар</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="propositions">
+      <section class="propositions" id="propositions">
         <div class="container">
           <h2 class="propositions__title">выберите программу питания</h2>
           <ul class="propositions__list">
             <li class="propositions__item">
               <div class="card">
-                <img class="card__img" srcset="
-                                ./images/proposes/buckwheat-544w.jpg   544w,
+                <img class="card__img" srcset="./images/proposes/buckwheat-315w 315w,
+                                ./images/proposes/buckwheat-544w.jpg  544w,
+                                ./images/proposes/buckwheat-630w 630w,
                                 ./images/proposes/buckwheat-1088w.jpg 1088w
-                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (max-width:767px) 315px"
                   src="./images/proposes/buckwheat-544w.jpg" alt="гречка с яйцом" />
                   <div class="propositions__buttons">
                     <button class="propositions__button propositions__button--first" type="button">Похудение
@@ -228,10 +229,11 @@
             </li>
             <li class="propositions__item">
               <div class="card">
-                <img class="card__img" srcset="
-                                ./images/proposes/meat-544w.jpg   544w,
+                <img class="card__img" srcset="./images/proposes/meat-315w 315w,
+                                ./images/proposes/meat-544w.jpg 544w,
+                                ./images/proposes/meat-630w 630w,
                                 ./images/proposes/meat-1088w.jpg 1088w
-                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (max-width:767px) 315px"
                   src="./images/proposes/meat-544w.jpg" alt="мясо в четырёх тарелках" />
                   <div class="propositions__buttons">
                     <button class="propositions__button propositions__button--second" type="button">Набор массы
@@ -239,7 +241,6 @@
                         <use class="icons" href="./images/icons.svg#arrow-down"></use>
                       </svg>
                     </button>
-                  
                   </div>
                 <div class="card__container card__container--second">
                   <h3 class="card__title">Набор массы</h3>
@@ -265,10 +266,11 @@
             </li>
             <li class="propositions__item">
               <div class="card">
-                <img class="card__img" srcset="
+                <img class="card__img" srcset="./images/proposes/salad-315w 315w,
                                 ./images/proposes/salad-544w.jpg   544w,
+                                ./images/proposes/salad-630w 630w,
                                 ./images/proposes/salad-1088w.jpg 1088w
-                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (min-width:480px) "
+                              " sizes="(min-width:1200px) 544px, (min-width:768px) 544px, (max-width:767px) 315px"
                   src="./images/proposes/salad-544w.jpg" alt="салат с мясом" />
                   <div class="propositions__buttons">
                     <button class="propositions__button propositions__button--third" type="button">Стабилизация
@@ -321,7 +323,7 @@
               ./images/reviews/arrow-left-90w.png 90w,
               ./images/reviews/arrow-left-100w.png 100w,
               ./images/reviews/arrow-left-180w.png 180w"
-              sizes="(min-width:1200px) 90px, (min-width:768px) 90px, (min-width:480px) 50px">
+              sizes="(min-width:1200px) 90px, (min-width:768px) 90px, (max-width:767px) 50px">
               <h3 class="reviews__subtitle">Диана</h3>
               <p class="reviews__text">
                 Давно мечта начать правильно питаться, а с доставкой это стало
@@ -334,7 +336,7 @@
               ./images/reviews/arrow-right-90w.png 90w,
               ./images/reviews/arrow-right-100w.png 100w,
               ./images/reviews/arrow-right-180w.png 180w"
-              sizes="(min-width:1200px) 90px, (min-width:768px) 90px,(min-width:480px) 50px">
+              sizes="(min-width:1200px) 90px, (min-width:768px) 90px,(max-width:767px) 50px">
             </li>
             <li class="reviews__item">
               <h3 class="reviews__subtitle">Юлия</h3>

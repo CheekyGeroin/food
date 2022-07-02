@@ -1,13 +1,13 @@
 .header{
     position: absolute;
-    @media screen and (min-width:$tablet){
-        
-        width: 100%;
-    }
+    width: 100%;
+    
 }
 .header__container{
     display: flex;
     align-items: center;
+    padding-top: 41px;
+    padding-bottom: 48px;
     @media screen and (min-width:$tablet){
         padding-top: 59px;
         padding-bottom: 30px;
@@ -32,6 +32,9 @@
     }
 }
 .language__item{
+    &:not(:last-child){
+        margin-right: 20px;
+    }
     @media screen and (min-width:$tablet){
         &:not(:last-child){
             margin-right: 21px;
@@ -41,6 +44,8 @@
 }
 .language__link{
     color: $mainTextColor;
+    font-size: 18px;
+    line-height: 1.39;
     &.active {
             color: $titleColor;
             padding: 9px;
@@ -53,9 +58,7 @@
     }
 }
 .header__button{
-    @media screen and (min-width:$tablet){
-        margin-left: auto;
-    }
+    margin-left: auto;
     @media screen and (min-width:$desktop){
         display: none;
     }

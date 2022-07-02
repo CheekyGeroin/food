@@ -1,55 +1,64 @@
 .propositions{
-   @media screen and (min-width:$tablet){
-        padding-top: 45px;
-        padding-bottom: 45px;
-   }
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 .propositions__title{
+    font-size: 25px;
+    line-height: 1.16;
+    color: $titleColor;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
     @media screen and (min-width:$tablet){
         font-size: 40px;
         line-height: 1.17;
-        color: $titleColor;
-        text-transform: uppercase;
-        margin-bottom: 45px;
-        text-align: center;
     }
 }
 .propositions__list{
-    @media screen and (min-width:$tablet){
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 .propositions__item{
-    @media screen and (min-width:$tablet){
-        &:not(:last-child){
-            margin-bottom: 25px;
-        }
+    &:not(:last-child){
+        margin-bottom: 25px;
     }
+    
 }
 .propositions__buttons{
     display: flex;
     justify-content: center;
-    padding: 40px 100px;
+    padding: 25px 10px 18px 10px;
+    @media screen and (min-width:$tablet){
+        padding: 40px 100px;
+    }
     @media screen and(min-width:$desktop){
         display: none;
     }
 }
 .propositions__button{
+    cursor: pointer;
     background-color: $titleColor;
     border: none;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 25px;
+    line-height: 1.16;
     text-transform: uppercase;
     color: $subtitleAndButton;
     text-align: center;
     display: flex;
     align-items: center;
+    @media screen and (min-width:$tablet){
+        font-size: 40px;
+        line-height: 1.17;
+    }
 }
 .propositions__icon{
     margin-left: 6px;
     fill: $subtitleAndButton;
-    
+    @media screen and (max-width:767px){
+        width: 19px;
+        height: 25px;
+    }
 }
