@@ -546,7 +546,7 @@ ul {
     right: 0;
     width: 100%;
     padding: 62px 0 65px 51px;
-    height: 607px;
+    height: 500px;
   }
   .menu.is-open {
     display: block;
@@ -556,7 +556,7 @@ ul {
   .menu {
     top: 85%;
     padding: 45px 45px 65px 51px;
-    height: 607px;
+    height: 600px;
   }
 }
 

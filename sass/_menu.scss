@@ -9,7 +9,7 @@
         right: 0;
         width: 100%;
         padding: 62px 0 65px 51px;
-        height: 607px;
+        height: 500px;
         &.is-open{
             display: block;
         }
@@ -17,6 +17,6 @@
     @media screen and (min-width:$tablet) and(max-width:1199px){
         top: 85%;
         padding: 45px 45px 65px 51px;
-        height: 607px;
+        height: 600px;
     }
 }
