@@ -1,0 +1,22 @@
+.menu{
+    @media screen and (max-width:1199px){
+        background-color: $titleColor;
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: 70%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 62px 0 65px 51px;
+        height: 607px;
+        &.is-open{
+            display: block;
+        }
+    }
+    @media screen and (min-width:$tablet) and(max-width:1199px){
+        top: 85%;
+        padding: 45px 45px 65px 51px;
+        height: 607px;
+    }
+}

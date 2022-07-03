@@ -8,6 +8,7 @@
     align-items: center;
     padding-top: 41px;
     padding-bottom: 48px;
+    position: relative;
     @media screen and (min-width:$tablet){
         padding-top: 59px;
         padding-bottom: 30px;
@@ -64,6 +65,7 @@
     }
 }
 .button{
+    cursor: pointer;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -89,6 +91,9 @@
    }
 }
 .navigation {
+    @media screen and (max-width:1199px){
+        margin-bottom: 50px;
+    }
     @media screen and (min-width:$desktop){
         margin-right: 110px;
     }
@@ -101,6 +106,11 @@
     }
 }
 .navigation__item{
+    @media screen and (max-width:1199px){
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+    }
     @media screen and (min-width:$desktop){
         &:not(:last-child){
             margin-right: 52px;
@@ -108,6 +118,12 @@
     }
 }
 .navigation__link{
+    font-size: 25px;
+    line-height: 1.36;
+    color: $mainTextColor;
+    &.active{
+        color: $subtitleAndButton;
+    }
     @media screen and (min-width:$desktop){
         font-size: 25px;
         line-height: 1.36;
@@ -121,6 +137,13 @@
     }
 }
 .menu__link{
+    @media screen and (max-width:1199px){
+        background-color: $titleColor;
+        border: none;
+        color: $mainTextColor;
+        font-size: 25px;
+        line-height: 1.36;
+    }
     @media screen and (min-width:$desktop){
         padding: 15px 50px;
         background-color: $subtitleAndButton;
