@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tenor+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+    <headear class="header basket">
+        <div class="container header__container basket__container">
+            <div class="language">
+                <ul class="language__list">
+                    <li class="language__item">
+                        <a href="" class="language__link">EN</a>
+                    </li>
+                    <li class="language__item">
+                        <a href="./index.html" class="language__link active">RU</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__button">
+                <button class="button" type="button">
+                    Меню
+                    <svg class="header__icon" width="20" height="21">
+                        <use href="./images/icons.svg#arrow-down"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="./index.html#hero" class="navigation__link active">Главная</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./index.html#how-work" class="navigation__link">Как работает</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./index.html#propositions" class="navigation__link">Меню</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./index.html#reviews" class="navigation__link">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__button">
+                    <a href="./basket.html" class="menu__link">Корзина</a>
+                </div>
+            </div>
+        </div>
+    </headear>
+    <main class="main">
+        <div class="container basket__container">
+            <div class="basket__button">
+                <a class="basket__link" href="./index.html">
+                    <svg class="basket__icon" width="25" height="36">
+                        <use href="./images/icons.svg#arrow-left"></use>
+                    </svg>
+                    Назад
+                </a>
+                
+            </div>
+            <form class="form">
+                <div class="select__container">
+                    <label class="form__label form__label--select">
+                        Программа
+                        <select class="form__select">
+                            <option value="weight_loss_for_women">Похудение для женщин</option>
+                            <option value="weight_loss_for_men">Похудение для мужчин</option>
+                            <option value="weight_gain_for_women">Набор массы для женщин</option>
+                            <option value="weight_gain_for_men">Набор массы для мужчин</option>
+                            <option value="stabilization_for_women">Стабилизация для женщин</option>
+                            <option value="stabilization_for_men">Стабилизация для мужчин</option>
+                        </select>
+                    </label>
+                </div>
+                <label class="form__label">
+                    Ваше имя
+                    <input type="name" name="name" class="form__input" placeholder="Например, Петр">
+                </label>
+                <label class="form__label">
+                    Номер телефона
+                    <input class="form__input" type="tel" name="phone number" placeholder="+380 хх ххх хх хх">
+                </label>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="mail">
+                <svg class="mail__icon" width="25" height="25">
+                    <use href="./images/icons.svg#message"></use>
+                </svg>
+                <a href="mailto:dietfoodua@gmail.com" class="mail__link">
+                    dietfoodua@gmail.com
+                </a>
+            </div>
+            <p class="footer__rights">© Powered by Tseluiko.Mariia</p>
+            <div class="contact">
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a href="tel:+380555555555" class="contact__link">
+                            <svg class="contact__icon" width="25" height="25">
+                                <use href="./images/icons.svg#call"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="https://www.instagram.com/" rel="noopener norefferer nofollow" class="contact__link">
+                            <svg class="contact__icon" width="25" height="25">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.main{
+padding-top: 251px;
+position: relative;
+}
+.basket__button{
+    position: absolute;
+@media screen and (min-width:$desktop){
+    top: 251px;
+    left: 80px;
+}
+}
+.basket__link{
+    color: $subtitleAndButton;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    @media screen and (min-width:$desktop){
+        font-size: 40px;
+        line-height: 1.17; 
+    }
+}
+.basket__icon{
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    @media screen and (min-width:$tablet){
+        margin-right: 6px;
+    }
+}
+.form{
+    margin-right: auto;
+    margin-left: auto;
+}
+.select__container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 619px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.form__label{
+    text-transform: uppercase;
+    display: block;
+    font-family: $secondFont;
+    color: #333333;
+    @media screen and (min-width:$desktop){
+        font-size: 25px;
+        line-height: 1.16;
+    }
+    &--select{
+        color: $titleColor;
+    }
+}
+.form__select{
+display: block;
+margin-top: 6px;
+background-color: rgba(12, 56, 43, 0.6);
+border: none;
+color: $mainTextColor;
+font-size: 25px;
+line-height: 1.36;
+}

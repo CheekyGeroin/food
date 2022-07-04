@@ -309,6 +309,12 @@ ul {
   width: 100%;
 }
 
+.basket {
+  background-color: #0C382B;
+  padding-top: 72px;
+  padding-bottom: 36px;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1368,9 +1374,9 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1490,4 +1496,91 @@ ul {
   .footer__rights {
     margin-right: 107px;
   }
+}
+
+.main {
+  padding-top: 251px;
+  position: relative;
+}
+
+.basket__button {
+  position: absolute;
+}
+@media screen and (min-width: 1200px) {
+  .basket__button {
+    top: 251px;
+    left: 80px;
+  }
+}
+
+.basket__link {
+  color: #F5B202;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .basket__link {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .basket__icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .basket__icon {
+    margin-right: 6px;
+  }
+}
+
+.form {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.select__container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 619px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__label {
+  text-transform: uppercase;
+  display: block;
+  font-family: "Tenor Sans", sans-serif;
+  color: #333333;
+}
+@media screen and (min-width: 1200px) {
+  .form__label {
+    font-size: 25px;
+    line-height: 1.16;
+  }
+}
+.form__label--select {
+  color: #0C382B;
+}
+
+.form__select {
+  display: block;
+  margin-top: 6px;
+  background-color: rgba(12, 56, 43, 0.6);
+  border: none;
+  color: #DDF2E0;
+  font-size: 25px;
+  line-height: 1.36;
 }/*# sourceMappingURL=main.css.map */

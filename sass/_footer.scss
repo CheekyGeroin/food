@@ -17,7 +17,7 @@
         justify-content: space-between;
     }
     @media screen and(min-width:$desktop){
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
 }
