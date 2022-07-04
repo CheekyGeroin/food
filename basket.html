@@ -66,28 +66,55 @@
                 
             </div>
             <form class="form">
-                <div class="select__container">
-                    <label class="form__label form__label--select">
-                        Программа
-                        <select class="form__select">
-                            <option value="weight_loss_for_women">Похудение для женщин</option>
-                            <option value="weight_loss_for_men">Похудение для мужчин</option>
-                            <option value="weight_gain_for_women">Набор массы для женщин</option>
-                            <option value="weight_gain_for_men">Набор массы для мужчин</option>
-                            <option value="stabilization_for_women">Стабилизация для женщин</option>
-                            <option value="stabilization_for_men">Стабилизация для мужчин</option>
-                        </select>
-                    </label>
-                </div>
-                <label class="form__label">
-                    Ваше имя
-                    <input type="name" name="name" class="form__input" placeholder="Например, Петр">
-                </label>
-                <label class="form__label">
-                    Номер телефона
-                    <input class="form__input" type="tel" name="phone number" placeholder="+380 хх ххх хх хх">
-                </label>
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label class="form__label form__label--select">
+                            Программа
+                            <select class="form__select">
+                                <option value="weight_loss_for_women">Похудение для женщин</option>
+                                <option value="weight_loss_for_men">Похудение для мужчин</option>
+                                <option value="weight_gain_for_women">Набор массы для женщин</option>
+                                <option value="weight_gain_for_men">Набор массы для мужчин</option>
+                                <option value="stabilization_for_women">Стабилизация для женщин</option>
+                                <option value="stabilization_for_men">Стабилизация для мужчин</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label">
+                            Ваше имя
+                            <input type="name" name="name" class="form__input" placeholder="Например, Петр">
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label">
+                            Номер телефона
+                            <input class="form__input" type="tel" name="phone" placeholder="+380 хх ххх хх хх">
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <button class="form__button" type="submit">Готово</button>
+                    </li>
+                </ul>
             </form>
+            <div class="backdrop is-hidden">
+                <div class="modal">
+                    <a href="./index.html" class="close__button">
+                        <svg class="button__icon" width="21" height="32">
+                            <use href="./images/icons.svg#arrow-left"></use>
+                        </svg>
+                        На главную
+                    </a>
+                    <div class="modal__title-container">
+                        <svg class="modal__icon" width="60" height="60">
+                            <use href="./images/icons.svg#basket-check"></use>
+                        </svg>
+                    </div>
+                        <h2 class="modal__title">Отлично</h2>
+                    
+                    <p class="modal__text">Скоро с вами свяжеться наш консультат для обсуждения меню, даты доставок и других деталий вашего питания</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -121,5 +148,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/data.js" type="module"></script>
 </body>
 </html>

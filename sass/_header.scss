@@ -1,13 +1,18 @@
 .header{
     position: absolute;
     width: 100%;
-    
-   
+    z-index: 10;
 }
 .basket{
     background-color: $titleColor;
-        padding-top: 72px;
-        padding-bottom: 36px;
+    // @media screen and (min-width:$tablet){
+    //     padding-top: 78px;
+    //     padding-bottom: 48px;
+    // }
+        @media screen and (min-width:$desktop){
+            padding-top: 72px;
+            padding-bottom: 36px;
+        }
 }
 .header__container{
     display: flex;
