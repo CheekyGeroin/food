@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tenor+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
+
 <body>
     <header class="header basket">
         <div class="container header__container basket__container">
             <div class="language">
                 <ul class="language__list">
                     <li class="language__item">
-                        <a href="./english.html" class="language__link">EN</a>
+                        <a href="./english.html" class="language__link active">EN</a>
                     </li>
                     <li class="language__item">
-                        <a href="./index.html" class="language__link active">RU</a>
+                        <a href="./index.html" class="language__link">RU</a>
                     </li>
                 </ul>
             </div>
             <div class="header__button">
                 <button class="button" type="button">
-                    Меню
+                    Menu
                     <svg class="header__icon" width="20" height="21">
                         <use href="./images/icons.svg#arrow-down"></use>
                     </svg>
@@ -35,21 +37,21 @@
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a href="./index.html#hero" class="navigation__link active">Главная</a>
+                            <a href="./index.html#hero" class="navigation__link active">Main</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="./index.html#how-work" class="navigation__link">Как работает</a>
+                            <a href="./index.html#how-work" class="navigation__link">How it's work</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="./index.html#propositions" class="navigation__link">Меню</a>
+                            <a href="./index.html#propositions" class="navigation__link">Menu</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="./index.html#reviews" class="navigation__link">Отзывы</a>
+                            <a href="./index.html#reviews" class="navigation__link">Reviews</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="menu__button">
-                    <a href="./basket.html" class="menu__link">Корзина</a>
+                    <a href="./basket.html" class="menu__link">Basket</a>
                 </div>
             </div>
         </div>
@@ -57,63 +59,63 @@
     <main class="main">
         <div class="container basket__container">
             <div class="basket__button">
-                <a class="basket__link" href="./index.html">
+                <a class="basket__link" href="./english.html">
                     <svg class="basket__icon" width="25" height="36">
                         <use href="./images/icons.svg#arrow-left"></use>
                     </svg>
-                    Назад
+                    Back
                 </a>
-                
+
             </div>
             <form class="form">
                 <ul class="form__list">
                     <li class="form__item">
                         <label class="form__label form__label--select">
-                            Программа
+                            Program
                             <select class="form__select">
                                 <option value="-">-</option>
-                                <option value="weight_loss_for_women">Похудение для женщин</option>
-                                <option value="weight_loss_for_men">Похудение для мужчин</option>
-                                <option value="weight_gain_for_women">Набор массы для женщин</option>
-                                <option value="weight_gain_for_men">Набор массы для мужчин</option>
-                                <option value="stabilization_for_women">Стабилизация для женщин</option>
-                                <option value="stabilization_for_men">Стабилизация для мужчин</option>
+                                <option value="weight_loss_for_women">Weight loss for women</option>
+                                <option value="weight_loss_for_men">Weight loss for men</option>
+                                <option value="weight_gain_for_women">Weight gain for women</option>
+                                <option value="weight_gain_for_men">Weight gain for men</option>
+                                <option value="stabilization_for_women">Stabilization for women</option>
+                                <option value="stabilization_for_men">Stabilization for men</option>
                             </select>
                         </label>
                     </li>
                     <li class="form__item">
                         <label class="form__label">
-                            Ваше имя
-                            <input type="text" name="name" class="form__input" placeholder="Например, Петр">
+                            Your name
+                            <input type="text" name="name" class="form__input" placeholder="For example, Petr">
                         </label>
                     </li>
                     <li class="form__item">
                         <label class="form__label">
-                            Номер телефона
+                            Phone number
                             <input class="form__input" type="tel" name="phone" placeholder="+380 хх ххх хх хх">
                         </label>
                     </li>
                     <li class="form__item">
-                        <button class="form__button" type="submit">Готово</button>
+                        <button class="form__button" type="submit">Ready</button>
                     </li>
                 </ul>
             </form>
             <div class="backdrop is-hidden">
                 <div class="modal">
-                    <a href="./index.html" class="close__button">
+                    <a href="./english.html" class="close__button">
                         <svg class="button__icon" width="21" height="32">
                             <use href="./images/icons.svg#arrow-left"></use>
                         </svg>
-                        На главную
+                        To main
                     </a>
                     <div class="modal__title-container">
                         <svg class="modal__icon" width="60" height="60">
                             <use href="./images/icons.svg#basket-check"></use>
                         </svg>
                     </div>
-                        <h2 class="modal__title">Отлично</h2>
-                    
-                    <p class="modal__text">Скоро с вами свяжеться наш консультант для обсуждения меню, даты доставок и других деталий вашего питания</p>
+                    <h2 class="modal__title">Excellent</h2>
+
+                    <p class="modal__text">Our consultant will contact you soon to discuss the menu, delivery dates and other details of your meal.</p>
                 </div>
             </div>
         </div>
@@ -150,6 +152,6 @@
         </div>
     </footer>
     <script src="./js/menu.js" type="module"></script>
-    <script src="./js/data.js" type="module"></script>
+    <script src="./js/dataEn.js" type="module"></script>
 </body>
 </html>
