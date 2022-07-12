@@ -492,6 +492,9 @@ ul {
 .navigation__link.active {
   color: #F5B202;
 }
+.navigation__link:hover, .navigation__link:focus {
+  color: #F5B202;
+}
 @media screen and (max-width: 1199px) {
   .navigation__link:hover, .navigation__link:focus {
     color: #F5B202;
@@ -1322,6 +1325,7 @@ ul {
 
 .reviews__image {
   position: absolute;
+  cursor: pointer;
 }
 .reviews__image--left {
   left: -33px;

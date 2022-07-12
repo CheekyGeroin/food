@@ -136,6 +136,9 @@
     &.active{
         color: $subtitleAndButton;
     }
+    &:hover, &:focus{
+        color: $subtitleAndButton;
+    }
     @media screen and (max-width:1199px){
         &:hover, &:focus{
             color: $subtitleAndButton;
